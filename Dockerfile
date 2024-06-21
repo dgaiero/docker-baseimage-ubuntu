@@ -1,11 +1,11 @@
 # syntax=docker/dockerfile:1
 
-FROM alpine:3.20 as rootfs-stage
+FROM alpine:3.20 AS rootfs-stage
 
 # environment
-ENV REL=noble
+ENV REL=mantic
 ENV ARCH=amd64
-ENV TAG=oci-noble-24.04
+ENV TAG=oci-mantic-23.10
 
 # install packages
 RUN \
