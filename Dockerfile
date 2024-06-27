@@ -124,7 +124,12 @@ RUN \
   apt-get upgrade -y && \
   apt-get install -y \
     apt-utils \
-    locales && \
+    locales \
+    intel-media-va-driver-non-free \
+    vainfo \
+    pciutils \
+    intel-gpu-tools \
+    && \
   echo "**** install packages ****" && \
   apt-get install -y \
     catatonit \
